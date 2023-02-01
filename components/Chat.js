@@ -38,6 +38,7 @@ export default class Chat extends React.Component {
         })
     }
 
+    //Bubble styling imported from gifted chat library
     renderBubble(props) {
         return (
           <Bubble
@@ -51,6 +52,7 @@ export default class Chat extends React.Component {
         )
       }
 
+      
     onSend(messages = []) {
         this.setState(previousState => ({
             messages: GiftedChat.append(previousState.messages, messages),
@@ -62,7 +64,7 @@ export default class Chat extends React.Component {
         let name = this.props.route.params.name;
         this.props.navigation.setOptions({ title: name });
         return (
-
+                // Using GiftedChat library creating the UI for the app and wrapping it inside of a View to make use of the KeyboardAvoidingView
             <View style={styles.container}>
                 <GiftedChat
                 renderBubble={this.renderBubble.bind(this)}
@@ -81,6 +83,7 @@ export default class Chat extends React.Component {
     };
 }
 
+//To be able to use KeyboardAvoidingView component we have to set flex to 1
 const styles = StyleSheet.create({
     container: {
         flex: 1,
