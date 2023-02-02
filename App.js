@@ -10,6 +10,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 const Stack = createStackNavigator();
 
+//Parent component where all its children will be imported to
+//Define prop within the class method
 export default class App extends Component {
  constructor(props) {
    super(props);
@@ -20,6 +22,9 @@ export default class App extends Component {
   Alert.alert(input.text);
 }
 
+    //The NavigationContainer is responsible for managing your app state and linking your top-level navigator to the app environment.
+    //Stack Navigator provides a way for your app to transition between screens where each new screen is placed on top of a stack.
+    //Stack.Screen is used to configure the screens in navigator
  render() {
    return (
     <NavigationContainer>
@@ -38,4 +43,12 @@ export default class App extends Component {
 </NavigationContainer>
    );
  }
+}
+
+//Using PropTypes is a usefull way to discover bugs by expecting a certain value-type from the defiened props
+//Setting the Name and the Color props to expect string type
+Chat.PropTypes = {
+  name: PropTypes.string,
+  color: PropTypes.string,
+  text: PropTypes.string
 }
