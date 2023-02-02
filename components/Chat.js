@@ -89,3 +89,10 @@ const styles = StyleSheet.create({
         flex: 1,
     }
 })
+
+//Using PropTypes is a usefull way to discover bugs by expecting a certain value-type from the defiened props
+//Setting the Name and the Color props to expect string type
+Chat.PropTypes = {
+    name: PropTypes.string,
+    color: PropTypes.string
+}
