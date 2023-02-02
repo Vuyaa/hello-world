@@ -94,25 +94,26 @@ const styles = StyleSheet.create({
       marginTop: 60,
     },
     inputBox: {
-        backgroundColor: '#fff',
-        height: '44%',
-        width: '88%',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        marginBottom: 15,
-        paddingVertical: 20
-      },
-      nameBox: {
-        height: 50,
-        width: '88%',
-        borderWidth: 1,
-        borderColor: 'grey',
-        borderRadius: 2,
-        fontSize: 16,
-        fontWeight: '300',
-        color: '#757083',
-        opacity: 50
-      },
+      backgroundColor: "#fff",
+      width: "88%",
+      alignItems: "center",
+      height: "44%",
+      justifyContent: 'space-evenly'
+    },
+    
+    nameBox: {  
+      alignSelf:'center',
+      height: 38,
+      width: '88%',
+      borderWidth: 1,
+      borderColor: 'grey',
+      borderRadius: 2,
+      fontSize: 16,
+      fontWeight: '300',
+      color: '#757083',
+      opacity: 50
+      
+    },
       colorText: {
         textAlign: 'center',
         fontSize: 16,
