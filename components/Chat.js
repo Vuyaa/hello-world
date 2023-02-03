@@ -2,6 +2,7 @@ import { async } from 'q';
 import React from 'react';
 import { StyleSheet, View, Platform, KeyboardAvoidingView } from 'react-native';
 import { GiftedChat, Bubble } from 'react-native-gifted-chat';
+import propTypes from "prop-types";
 
 //defining firebase from firestore
 const firebase = require('firebase');
@@ -89,6 +90,7 @@ export default class Chat extends React.Component {
     this.authUnsubscribe();
   }
 
+  //On send, add message to database, and append new massage to previos messages
   onSend(messages = []) {
     this.setState(
       (previousState) => ({
@@ -100,6 +102,7 @@ export default class Chat extends React.Component {
     );
   }
 
+  //save object to state
   addMessage = () => {
     const message = this.state.messages[0];
     this.referenceChatMessages.add({
@@ -180,3 +183,12 @@ const styles = StyleSheet.create({
         flex: 1,
     }
 })
+
+//Using PropTypes is a usefull way to discover bugs by expecting a certain value-type from the defiened props
+//Setting the Name and the Color props to expect string type
+Chat.propTypes = {
+  name: propTypes.string,
+  color: propTypes.string,
+  user: propTypes.object,
+  _id: propTypes.string,
+}

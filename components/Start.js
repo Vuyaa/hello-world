@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, TextInput, Button, StyleSheet, ImageBackground, TouchableOpacity } from 'react-native';
+import propTypes from "prop-types";
 
 //Define background colors
 const backgroundColors = {
@@ -140,3 +141,12 @@ const styles = StyleSheet.create({
         fontWeight: '600'
       }
   })
+
+  //Using PropTypes is a usefull way to discover bugs by expecting a certain value-type from the defiened props
+//Setting the Name and the Color props to expect string type
+Start.propTypes = {
+  name: propTypes.string,
+  color: propTypes.string,
+  user: propTypes.object,
+  _id: propTypes.string,
+}
