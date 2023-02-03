@@ -61,8 +61,8 @@ export default class Start extends React.Component {
               onPress={() =>
                 this.props.navigation.navigate('Chat',
                   {
-                    name: this.state.name,                      //Passing props to the Chat component
-                    color: this.state.color                     //Passing props to the Chat component
+                    name: this.state.name,     //Passing props to the Chat component
+                    color: this.state.color    //Passing props to the Chat component
                   })
               }
             >
@@ -85,7 +85,8 @@ const styles = StyleSheet.create({
     image: {
       flexDirection: 'column',
       justifyContent: 'space-between',
-      alignItems: 'center'
+      alignItems: 'center',
+      height: '100%',
     },
     title: {
       fontSize: 45,
@@ -97,17 +98,17 @@ const styles = StyleSheet.create({
       backgroundColor: "#fff",
       width: "88%",
       alignItems: "center",
-      height: "44%",
+      height: "50%",
       justifyContent: 'space-evenly'
     },
     
     nameBox: {  
       alignSelf:'center',
-      height: 38,
+      height: 40,
       width: '88%',
       borderWidth: 1,
       borderColor: 'grey',
-      borderRadius: 2,
+      borderRadius: 5,
       fontSize: 16,
       fontWeight: '300',
       color: '#757083',
