@@ -4,23 +4,23 @@ import propTypes from "prop-types";
 
 //Define background colors
 const backgroundColors = {
-    black: { backgroundColor: '#090c08' },
-    purple: { backgroundColor: '#474056' },
-    grey: { backgroundColor: '#8a95a5' },
-    green: { backgroundColor: '#b9c6ae' }
-  };
+  black: { backgroundColor: '#090c08' },
+  purple: { backgroundColor: '#474056' },
+  grey: { backgroundColor: '#8a95a5' },
+  green: { backgroundColor: '#b9c6ae' }
+};
 
 
 export default class Start extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state= {name: "", color:""}; // Define props to pass them to the child components
-    }
+  constructor(props) {
+    super(props);
+    this.state = { name: "", color: "" }; // Define props to pass them to the child components
+  }
 
-    render(){
-        const { black, purple, grey, green } = backgroundColors;   //Define background colors in render function
-        return (
-            <View style={styles.container}>                     
+  render() {
+    const { black, purple, grey, green } = backgroundColors;   //Define background colors in render function
+    return (
+      <View style={styles.container}>
         <ImageBackground
           source={require('../assets/background-image.png')}
           style={[styles.container, styles.image]}
@@ -80,69 +80,69 @@ export default class Start extends React.Component {
 //Design from the project brief
 
 const styles = StyleSheet.create({
-    container: {
-      flex: 1
-    },
-    image: {
-      flexDirection: 'column',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      height: '100%',
-    },
-    title: {
-      fontSize: 45,
-      fontWeight: '600',
-      color: '#fff',
-      marginTop: 60,
-    },
-    inputBox: {
-      backgroundColor: "#fff",
-      width: "88%",
-      alignItems: "center",
-      height: "50%",
-      justifyContent: 'space-evenly'
-    },
-    
-    nameBox: {  
-      alignSelf:'center',
-      height: 40,
-      width: '88%',
-      borderWidth: 1,
-      borderColor: 'grey',
-      borderRadius: 5,
-      fontSize: 16,
-      fontWeight: '300',
-      color: '#757083',
-      opacity: 50
-      
-    },
-      colorText: {
-        textAlign: 'center',
-        fontSize: 16,
-        fontWeight: '300',
-        color: '#757083',
-        opacity: 100
-      },
-      colorWrapper: {
-        flexDirection: 'row'
-      },
-      color: {
-        width: 40,
-        height: 40,
-        borderRadius: 20,
-        margin: 10
-      },
-      chatBox: {
-        backgroundColor: '#757083',
-        justifyContent: 'center'
-      },
-      chatBoxText: {
-        color: '#fff',
-        fontWeight: '600'
-      }
-  })
+  container: {
+    flex: 1
+  },
+  image: {
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    height: '100%',
+  },
+  title: {
+    fontSize: 45,
+    fontWeight: '600',
+    color: '#fff',
+    marginTop: 60,
+  },
+  inputBox: {
+    backgroundColor: "#fff",
+    width: "88%",
+    alignItems: "center",
+    height: "50%",
+    justifyContent: 'space-evenly'
+  },
 
-  //Using PropTypes is a usefull way to discover bugs by expecting a certain value-type from the defiened props
+  nameBox: {
+    alignSelf: 'center',
+    height: 40,
+    width: '88%',
+    borderWidth: 1,
+    borderColor: 'grey',
+    borderRadius: 5,
+    fontSize: 16,
+    fontWeight: '300',
+    color: '#757083',
+    opacity: 50
+
+  },
+  colorText: {
+    textAlign: 'center',
+    fontSize: 16,
+    fontWeight: '300',
+    color: '#757083',
+    opacity: 100
+  },
+  colorWrapper: {
+    flexDirection: 'row'
+  },
+  color: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    margin: 10
+  },
+  chatBox: {
+    backgroundColor: '#757083',
+    justifyContent: 'center'
+  },
+  chatBoxText: {
+    color: '#fff',
+    fontWeight: '600'
+  }
+})
+
+//Using PropTypes is a usefull way to discover bugs by expecting a certain value-type from the defiened props
 //Setting the Name and the Color props to expect string type
 Start.propTypes = {
   name: propTypes.string,
