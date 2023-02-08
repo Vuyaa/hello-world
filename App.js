@@ -7,6 +7,7 @@ import Start from './components/Start';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import propTypes from "prop-types";
+import CustomActions from './components/CustomActions';
 
 
 
@@ -23,10 +24,15 @@ export default class App extends Component {
   Alert.alert(input.text);
 }
 
+renderCustomActions = (props) => {
+  return <CustomActions {...props} />;
+};
+
 
 //The NavigationContainer is responsible for managing your app state and linking your top-level navigator to the app environment.
 //Stack Navigator provides a way for your app to transition between screens where each new screen is placed on top of a stack.
  render() {
+  
    return (
     <NavigationContainer>
       <Stack.Navigator

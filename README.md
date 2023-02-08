@@ -38,3 +38,28 @@ and location data</li>
 <li>Data gets stored online and offline.
 </li>
 </ul>
+
+
+<h2>Setup</h2>
+<h3>Tools needed:</h3>
+<ul>
+<li>Expo platform</li>
+<li>Expo go</li>
+<li>Android studio</li>
+<li>Physical device (Smartphone)</li>
+</ul>
+
+<h3>Guide:</h3>
+<ul>
+<li>Start the app from the console using expo start</li>
+<li>Open Expo go app on your Smartphone and scan the QR code to run the app</li>
+<li>Run the Android studio and input the metro IP adress</li>
+</ul>
+
+<h3>Set up your data storage:</h3>
+<ul>
+<li>Sign in to Firebase using your Gmail account</li>
+<li>Set up the new project</li>
+<li>Open project settings on the left hand side </li>
+<li>Copy the content of the firebaseConfig and replace with default Config in the Chat.js</li>
+</ul>
