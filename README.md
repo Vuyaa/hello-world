@@ -1,6 +1,8 @@
 <h1>Chat App</h1>
 <h3>Start screenshot</h3>
-![img1]("background.png")
+
+![img1](background.png)
+
 <h3>Screenshot Chat:</h3>
 ![img3]("background1.png")
 <h3>Short Description</h3>
