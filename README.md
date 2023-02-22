@@ -1,9 +1,8 @@
 <h1>Chat App</h1>
-
-![img3](background.png)
-<img href="background.png"></img>
+<h3>Start screenshot</h3>
+![img1](background.png)
 <h3>Screenshot Chat:</h3>
-![img3](background1.png)
+![img2](background1.png)
 <h3>Short Description</h3>
 <p>ChatApp for smartphone users, both Android and iOS. Chat, share and connect! </p>
  
