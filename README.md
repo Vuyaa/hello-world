@@ -2,7 +2,7 @@
 <h3>Start screenshot</h3>
 ![img1](background.png)
 <h3>Screenshot Chat:</h3>
-![img2](background1.png)
+![img3](background1.png)
 <h3>Short Description</h3>
 <p>ChatApp for smartphone users, both Android and iOS. Chat, share and connect! </p>
  
